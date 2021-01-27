@@ -15,7 +15,7 @@
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Employee ID"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/Employee_ID_value"
@@ -33,7 +33,7 @@
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Name"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/Name_value"
@@ -51,7 +51,8 @@
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Gender"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
+
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,6 +71,24 @@
                android:text="@string/femaleGender" />
         </RadioGroup>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Email_view"
+        android:layout_width="376dp"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Email Address"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Email_value"
+            android:layout_width="224dp"
+            android:layout_height="match_parent"
+            android:hint="@string/Enter_Email"
+            android:textSize="14sp" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/Access_view"
@@ -80,7 +99,7 @@
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Access Code"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/Access_code_value"
@@ -99,7 +118,7 @@
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Confirm Code"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/Confirm_code_value"
@@ -118,7 +137,7 @@
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Department"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
         <Spinner
             android:id="@+id/department_spinner"
             android:layout_width="match_parent"
@@ -135,7 +154,7 @@
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="A/D"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
         <CheckBox android:id="@+id/checkbox_access"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -162,6 +181,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
+            android:onClick="submitForm"
             android:text="@string/submit" />
     </LinearLayout>
 

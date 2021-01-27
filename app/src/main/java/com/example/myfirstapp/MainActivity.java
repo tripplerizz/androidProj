@@ -2,6 +2,8 @@ package com.example.myfirstapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ClipData;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -26,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
     }
+    //reseting functions
     public void clearText(int id){
         EditText tempId = findViewById( id);
         tempId.setText("");
     }
-    public void resetFrom ( View view){
+    public void resetFrom (View view){
         clearText(R.id.Employee_ID_value);
         clearText(R.id.Name_value);
         clearText(R.id.Access_code_value);
@@ -39,6 +42,55 @@ public class MainActivity extends AppCompatActivity {
         ((CheckBox) findViewById(R.id.checkbox_access)).setChecked(false);
         ((RadioButton) findViewById(R.id.radio_female)).setChecked(false);
         ((RadioButton) findViewById(R.id.radio_male)).setChecked(false);
+    }
+    //submit functions
+    public String getStringValue(int id){
+        EditText temp = findViewById(id);
+        String word = temp.getText().toString();
+        return word;
+    }
+    public boolean checkEmpValues(String val){
+        //checking charectors
+        for (int i =0 ; i<val.length();i++){
+            char letter = val.charAt(i);
+            if (!Character.isLetterOrDigit(letter) || !Character.isUpperCase(letter)){
+                return false;
+            }
+        }
+        // checking if id matches res
+        Resources res = getResources();
+        String[] IDs = res.getStringArray(R.array.EmpId);
+        for (String emp_id: IDs){
+            if (emp_id.equals(val)){
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean checkName(String Name){
+        String [] list;
+        list = Name.split(" ");
+        for (String val: list){
+            if (!Character.isUpperCase(val.charAt(0))){
+               return false;
+            }
+        }
+        return true;
+    }
+    public void submitForm(View view){
+        // getting string value
+        String EmpId = getStringValue(R.id.Employee_ID_value);
+        if (checkEmpValues(EmpId)){
+            return;
+        }
+        String Name = getStringValue(R.id.Name_value);
+        if (checkName(Name)){
+            return;
+        }
+        String Email = getStringValue(R.id.Email_value);
+        String AccessCode = getStringValue(R.id.Access_code_value);
+        String ConfirmCode = getStringValue(R.id.Confirm_code_value);
+
     }
     public void onCheckboxClicked(View view) {
         // Is the view now checked?

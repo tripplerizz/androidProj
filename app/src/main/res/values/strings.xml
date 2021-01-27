@@ -9,6 +9,14 @@
     <string name="choice">Allowed Access?</string>
     <string name="femaleGender">Female</string>
     <string name="maleGender">Male</string>
+    <string name="Enter_Email">Enter Your Email</string>
+
+    <string-array name= "EmpId">
+        <item>444</item>
+        <item>555</item>
+        <item>333</item>
+        <item>888</item>
+    </string-array>
 
     <string-array name="department_choices">
         <item>Computer Science</item>
