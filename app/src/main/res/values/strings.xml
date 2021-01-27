@@ -7,6 +7,8 @@
     <string name="submit">submit</string>
     <string name="reset">reset</string>
     <string name="choice">Allowed Access?</string>
+    <string name="femaleGender">Female</string>
+    <string name="maleGender">Male</string>
 
     <string-array name="department_choices">
         <item>Computer Science</item>

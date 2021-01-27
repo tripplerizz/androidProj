@@ -18,6 +18,7 @@
             android:textSize="24sp" />
 
         <EditText
+            android:id="@+id/Employee_ID_value"
             android:layout_width="231dp"
             android:layout_height="match_parent"
             android:hint="@string/Enter_ID" />
@@ -35,6 +36,7 @@
             android:textSize="24sp" />
 
         <EditText
+            android:id="@+id/Name_value"
             android:layout_width="231dp"
             android:layout_height="match_parent"
             android:hint="@string/Name_Id" />
@@ -50,16 +52,23 @@
             android:layout_height="42dp"
             android:text="Gender"
             android:textSize="24sp" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Male"></RadioButton>
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Female"></RadioButton>
+            android:orientation="horizontal">
+            <RadioButton
+               android:id="@+id/radio_female"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:onClick="onRadioButtonClicked"
+               android:text="@string/maleGender" />
+            <RadioButton
+               android:id="@+id/radio_male"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:onClick="onRadioButtonClicked"
+               android:text="@string/femaleGender" />
+        </RadioGroup>
     </LinearLayout>
 
     <LinearLayout
@@ -74,6 +83,7 @@
             android:textSize="24sp" />
 
         <EditText
+            android:id="@+id/Access_code_value"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:hint="@string/Enter_Access_Code"
@@ -92,6 +102,7 @@
             android:textSize="24sp" />
 
         <EditText
+            android:id="@+id/Confirm_code_value"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:hint="@string/Enter_Confirm_Code"
@@ -115,9 +126,43 @@
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="@string/send" />
+    <LinearLayout
+        android:id="@+id/AD_view"
+        android:layout_width="376dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="A/D"
+            android:textSize="24sp" />
+        <CheckBox android:id="@+id/checkbox_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice"
+            android:onClick="onCheckboxClicked"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_view"
+        android:layout_width="208dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="175dp">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="resetFrom"
+            android:text="@string/reset" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/submit" />
+    </LinearLayout>
+
 </LinearLayout>
