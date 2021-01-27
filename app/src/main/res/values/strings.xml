@@ -4,8 +4,10 @@
     <string name="Name_Id">Name</string>
     <string name="Enter_Access_Code">Enter Access Code</string>
     <string name="Enter_Confirm_Code">Enter Confirm Code</string>
-    <string name="send">Send</string>
-    
+    <string name="submit">submit</string>
+    <string name="reset">reset</string>
+    <string name="choice">Allowed Access?</string>
+
     <string-array name="department_choices">
         <item>Computer Science</item>
         <item>English</item>
