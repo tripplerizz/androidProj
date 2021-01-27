@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="Enter_ID">Enter Employee Id</string>
+    <string name="Name_Id">Name</string>
+    <string name="Enter_Access_Code">Enter Access Code</string>
+    <string name="Enter_Confirm_Code">Enter Confirm Code</string>
+    <string name="send">Send</string>
+    
+    <string-array name="department_choices">
+        <item>Computer Science</item>
+        <item>English</item>
+        <item>Music</item>
+        <item>Film</item>
+    </string-array>
+</resources>

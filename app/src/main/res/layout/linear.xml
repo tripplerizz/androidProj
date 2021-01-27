@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/Employee_ID_View"
+        android:layout_width="376dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Employee ID"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_width="231dp"
+            android:layout_height="match_parent"
+            android:hint="@string/Enter_ID" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Name_view"
+        android:layout_width="376dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Name"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_width="231dp"
+            android:layout_height="match_parent"
+            android:hint="@string/Name_Id" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Gender_view"
+        android:layout_width="376dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Gender"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"></RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"></RadioButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Access_view"
+        android:layout_width="376dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Access Code"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Enter_Access_Code"
+            android:inputType="numberPassword"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Confirm_view"
+        android:layout_width="376dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Confirm Code"
+            android:textSize="24sp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Enter_Confirm_Code"
+            android:inputType="numberPassword"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Department_view"
+        android:layout_width="376dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Department"
+            android:textSize="24sp" />
+        <Spinner
+            android:id="@+id/department_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/send" />
+</LinearLayout>
