@@ -30,6 +30,211 @@
             android:layout_toEndOf="@+id/Employe_ID_text"
             android:layout_toRightOf="@+id/Employe_ID_text"
             android:hint="@string/Enter_ID" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_below="@+id/Employe_ID_text"
+            android:id="@+id/Name_text"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Name_value"
+            android:layout_width="231dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/Employee_ID_value"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/Name_text"
+            android:layout_toRightOf="@+id/Name_text"
+            android:hint="@string/Name_Id" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/Gender_text"
+            android:layout_below="@+id/Name_value"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Gender"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_below="@+id/Name_value"
+            android:layout_width="231dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/Gender_text"
+            android:layout_toRightOf="@+id/Gender_text"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/maleGender" />
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/femaleGender" />
+        </RadioGroup>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_below="@+id/Gender_text"
+            android:id="@+id/Email_text"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:inputType="textEmailAddress"
+            android:text="Email Address"
+            android:textColor="#090000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Email_value"
+            android:layout_width="224dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/Gender_text"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/Email_text"
+            android:layout_toRightOf="@+id/Email_text"
+            android:hint="@string/Enter_Email"
+            android:textSize="14sp" />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_below="@+id/Email_text"
+            android:id="@+id/Access_text"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:inputType="number"
+            android:text="Access Code"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Access_code_value"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@+id/Email_text"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toEndOf="@+id/Access_text"
+            android:layout_toRightOf="@+id/Access_text"
+            android:hint="@string/Enter_Access_Code"
+            android:inputType="numberPassword"
+            android:textSize="14sp" />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_below="@+id/Access_code_value"
+            android:id="@+id/Confirm_text"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Confirm Code"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/Confirm_code_value"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@+id/Access_code_value"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/Confirm_text"
+            android:layout_toRightOf="@+id/Confirm_text"
+            android:hint="@string/Enter_Confirm_Code"
+            android:inputType="numberPassword"
+            android:textSize="14sp" />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_below="@+id/Confirm_code_value"
+            android:id="@+id/Department_text"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="Department"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/department_spinner"
+            android:layout_width="194dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/Confirm_code_value"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/Department_text"
+            android:layout_toRightOf="@+id/Department_text" />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_below="@+id/Department_text"
+            android:id="@+id/AD_text"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:text="A/D"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_access"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Department_text"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/AD_text"
+            android:layout_toRightOf="@+id/AD_text"
+            android:onClick="onCheckboxClicked"
+            android:text="@string/choice" />
+
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:id="@+id/reset_view"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/submit_view"
+            android:layout_toRightOf="@+id/submit_view"
+            android:onClick="resetFrom"
+            android:text="@string/reset" />
+
+        <Button
+            android:id="@+id/submit_view"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox_access"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:onClick="submitForm"
+            android:text="@string/submit" />
 
     </TableRow>
 </TableLayout>
