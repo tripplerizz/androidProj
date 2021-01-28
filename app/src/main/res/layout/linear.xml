@@ -12,9 +12,11 @@
         android:layout_height="70dp">
 
         <TextView
+            android:id="@+id/Employe_ID_text"
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Employee ID"
+            android:textColor="#090909"
             android:textSize="18sp" />
 
         <EditText
@@ -30,9 +32,11 @@
         android:layout_height="70dp">
 
         <TextView
+            android:id="@+id/Name_text"
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Name"
+            android:textColor="#000000"
             android:textSize="18sp" />
 
         <EditText
@@ -48,9 +52,11 @@
         android:layout_height="70dp">
 
         <TextView
+            android:id="@+id/Gender_text"
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Gender"
+            android:textColor="#000000"
             android:textSize="18sp" />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
@@ -75,10 +81,14 @@
         android:id="@+id/Email_view"
         android:layout_width="376dp"
         android:layout_height="70dp">
+
         <TextView
+            android:id="@+id/Email_text"
             android:layout_width="150dp"
             android:layout_height="42dp"
+            android:inputType="textEmailAddress"
             android:text="Email Address"
+            android:textColor="#090000"
             android:textSize="18sp" />
 
         <EditText
@@ -96,9 +106,12 @@
         android:layout_height="70dp">
 
         <TextView
+            android:id="@+id/Access_text"
             android:layout_width="150dp"
             android:layout_height="42dp"
+            android:inputType="number"
             android:text="Access Code"
+            android:textColor="#000000"
             android:textSize="18sp" />
 
         <EditText
@@ -115,9 +128,11 @@
         android:layout_height="70dp">
 
         <TextView
+            android:id="@+id/Confirm_text"
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Confirm Code"
+            android:textColor="#000000"
             android:textSize="18sp" />
 
         <EditText
@@ -134,9 +149,11 @@
         android:layout_height="70dp">
 
         <TextView
+            android:id="@+id/Department_text"
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="Department"
+            android:textColor="#000000"
             android:textSize="18sp" />
         <Spinner
             android:id="@+id/department_spinner"
@@ -151,9 +168,11 @@
         android:layout_height="70dp">
 
         <TextView
+            android:id="@+id/AD_text"
             android:layout_width="150dp"
             android:layout_height="42dp"
             android:text="A/D"
+            android:textColor="#000000"
             android:textSize="18sp" />
         <CheckBox android:id="@+id/checkbox_access"
             android:layout_width="wrap_content"
